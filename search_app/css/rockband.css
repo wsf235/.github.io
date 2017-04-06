@@ -1,0 +1,319 @@
+
+h1{
+    font-size: 40px;
+    color: #783c90;
+}
+h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a5a5a5;
+    display: block;
+    width: 100%;
+}
+h2 em{
+    font-size: 2.5em;
+    color: #e5e5e5;
+}
+
+h3{
+    font-size: 35px;
+    color: #e5e5e5;
+}
+h4{
+    font-size: 16px;
+    color: #a5a5a5;
+}
+
+p{
+    width: 100%;
+}
+
+header{
+    background-image: url("../images/band.jpg");
+    padding: 0 100px 0 100px;
+    height: 500px;
+}
+
+body a{
+    font-weight: bold;
+    color: #9b59b6;
+    text-decoration: underline;
+}
+
+nav{
+    padding-top: 30px;
+}
+
+nav ul{
+    padding: 15px 0 0 10px;
+}
+
+nav ul li{
+    padding: 0 0 10px 10px;
+    color: #222222;
+    opacity: 0.5;
+}
+nav ul li:hover{
+    color: #eeeeee;
+    opacity: 1.0;
+}
+nav ul li a:active{
+    border-left: solid 3px #9b59b6;
+}
+
+button{
+    font-weight: bold;
+    font-size: 14px;
+    color: #eeeeee;
+    background-color: #9b59b6;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    border-bottom: solid 3px #783c90;
+}
+
+footer{
+    padding: 0 100px 0 100px;
+    text-align: center;
+    clear: both;
+}
+
+footer a{
+    display: inline-block;
+}
+
+#tours{
+    text-align: right;
+    background-image: url("../images/band.jpg");
+    box-shadow: 0 0 0 1000px hsla(0, 0%, 50%, 0.5) inset;
+}
+
+#latest, #tours, #about_the_band{
+    padding: 0 100px 0 100px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    
+}
+
+#latest h2, #about_the_band h2{
+    border-left: solid 3px #a5a5a5;
+}
+
+#tours h2{
+    border-right: solid 3px #a5a5a5;
+}
+
+#latest article > #news_content{
+    display: block;
+    width: calc(100% / 2);
+    float: left;
+    clear: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#news_content img{
+    width: 50%;
+}
+aside{
+    display: block;
+    float: right;
+    clear: none;
+    width: 49%;
+}
+
+#latest_news_content{
+    display: block;
+    width: calc(100% / 2);
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+    float: left;
+}
+#latest_news_content img{
+    width: 100%;
+}
+
+#about_the_band{
+    background-color: #222222;
+    background-image: url("../images/nycity.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 25px 150px 200px 150px;
+}
+
+#about_the_band p{
+    color: #888888;
+}
+
+table{
+    padding: 30px 200px 30px 200px;
+}
+
+table img{
+    width: 60%;
+}
+
+th{
+    color: #eeeeee;
+}
+
+td{
+    padding-bottom: 20px;
+}
+/*Recent News*/
+#recent_news{
+    padding: 50px 150px 50px 150px;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    text-align: center;
+    background-color: #222222;
+}
+
+#recent_news #news_content{
+    padding-top: 15px;
+    clear: both;
+    height: 100%;
+}
+
+#recent_news img{
+    width: 40%;
+    float: left;
+    clear: left;
+    box-shadow: 0 0 15px #9b59b6;
+    opacity: 0.85;
+    position: relative;
+}
+
+#recent_news p{
+    color: #888888;
+}
+
+/*Recent News End*/
+
+/*Tour Dates*/
+#tour_events{
+    padding: 50px 150px 50px 150px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    text-align: center;
+    background-color: #222222;
+}
+
+#tour_events #btn1, #tours #btn1{
+    clear: none;
+    float: left;
+    position: relative;
+    top: 15px;
+}
+
+#tour_events section, #tours section{
+    text-align: center;
+}
+
+#tour_events #event_content, #tours #event_content{
+    /*background-color: #222222;*/
+    border-bottom: solid #783c90 3px;
+    border-top: solid #783c90 3px;
+}
+
+#tour_events p, #tours p{
+    color: #eeeeee;
+}
+
+#tour_events #btn2, #tours #btn2{
+    position: relative;
+    clear: none;
+    float: right;
+    top:-50px;
+}
+
+/*Tour Dates end*/
+
+/*Meet The Band*/
+
+#band_page{
+    padding: 50px 300px 50px 300px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    background-color: #222222;
+}
+
+#band_page img{
+    box-shadow: 0 0 15px #9b59b6;
+    opacity: 0.85;
+}
+
+#band_page p{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #9b59b6;
+    border-radius: 20px;
+    opacity: 0.4;
+    width: 60%;
+}
+
+#band_page #td2{
+    text-align: center;
+    font-size: 40px;
+    background-color: #9b59b6;
+    border-radius: 20px;
+}
+
+/*Meet The Band End*/
+
+/* About The Band */
+
+#contact_page{
+    padding: 50px 150px 50px 150px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    color: #888888;
+    background-color: #222222;
+    background-image: url("../images/nycity.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#contact_page h1{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#contact_page h2{
+    padding-top: 25px;
+    color: #a5a5a5;
+    text-align: center;
+}
+
+#contact_page h3{
+    padding-top: 25px;
+    color: #e5e5e5;
+}
+
+#contact_page h4{
+    padding: 25px 0 10px 100px;
+    color: #a5a5a5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#contact_page p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#contact_page form{
+    margin-left: 100px;
+    margin-right: 750px;
+    border: double 3px #783c90;
+}
+
+/* About The Band end*/

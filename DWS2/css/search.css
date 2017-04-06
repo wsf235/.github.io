@@ -1,0 +1,29 @@
+header a img {
+  width: 100px;
+  height: auto; }
+
+body {
+  background-color: #999999;
+  font-family: "PT Sans", sans-serif; }
+
+ul {
+  list-style: none; }
+  ul li {
+    float: left;
+    margin-right: 25px; }
+
+h1 {
+  clear: both; }
+
+.daily_pkmn {
+  border: 5px solid #ff0; }
+
+.pkmn_search_go .game_search_go .item_search_go .move_search_go .place_search_go {
+  background-color: #f33;
+  border-radius: 10px;
+  font-family: "PT Sans Caption", sans-serif; }
+
+#pkmn_search_input #game_search_input #item_search_input #move_search_input #place_search_input {
+  color: darkblue; }
+
+/*# sourceMappingURL=search.css.map */
