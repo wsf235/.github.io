@@ -80,12 +80,11 @@ footer{
 
 footer a{
     display: inline-block;
-	
+	height: 30px;
+	width: 30 px;
 }
 
 footer a img{
-	height: 30px;
-	width: 30 px;
 	text-indent: -9999px;
 	background-position: 0 0;
 	
