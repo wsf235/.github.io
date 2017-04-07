@@ -83,6 +83,10 @@ footer a{
 	
 }
 
+#A1, #A2, #A3, #A4, #A5{
+	text-indent: -9999px;
+}
+
 #A1{
 	height: 30px;
 	width: 30px;
