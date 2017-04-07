@@ -84,15 +84,11 @@ footer a{
 	width: 30 px;
 	text-indent: -9999px;
 	background-image: url("../images/social.png");
-}
-
-footer a img{
-	
 	background-position: 0 0;
 	
 }
 
-footer a img:hover{
+footer a:hover{
 	background-position: 0 30px;
 }
 
