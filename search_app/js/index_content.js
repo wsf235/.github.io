@@ -77,11 +77,11 @@ request.onload = function() {
     new_content += "</section>";
 
     old_content.innerHTML = new_content;
-
+/*
     old_content = document.querySelector("#social");
     new_content = "<a href='news.html'>Newsletter</a>";
     new_content += "<a href='https://facebook.com'><img src='images/social.png' alt='#'></a> <a href='https://twitter.com'><img src='images/social.png' alt='#'></a> <a href='https://youtube.com'><img src='images/social.png' alt='#'></a> <a href='https://google.com'><img src='images/social.png' alt='#'></a> <a href='https://instagram.com'><img src='images/social.png' alt='#'></a>";
-    new_content += "<a href='aboutus.html'>Contact</a>";
-    old_content.innerHTML = new_content;
+    new_content += "<a href='aboutus.html'>Contact</a>"; 
+    old_content.innerHTML = new_content; */
 
 };
