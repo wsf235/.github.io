@@ -7,7 +7,7 @@ var ResultingElement = document.querySelector("#daily");
 ResultingElement.addEventListener('click', function(e){
     var type = "pokemon";
     var id = Math.floor((Math.random() * 802) + 1);
-    var api = "http://pokeapi.co/api/v2/"+type+"/"+id+"/";
+    var api = "https://pokeapi.co/api/v2/"+type+"/"+id+"/";
     Request(api, type);
 });
 

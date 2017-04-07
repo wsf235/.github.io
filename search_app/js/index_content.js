@@ -32,8 +32,11 @@ request.onload = function() {
     if(stopper>0) {
         for (i = 1; i < stopper; i++) {
 
-
+			if( (i % 2) == 1){
             new_content += "<article id='news_content'>";
+			}else{
+			new_content += "<article id='news_content2'>";
+			}
             new_content += "<h2>" + data.news[i].title + "</h2>";
             new_content += "<p>" + data.news[i].postDate + "</p>";
             new_content += "<img src='" + data.news[i].imageURL + "'>";

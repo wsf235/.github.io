@@ -184,6 +184,17 @@ footer a{
 #news_content img{
     width: 50%;
 }
+#latest article > #news_content2{
+    display: block;
+    width: calc(100% / 2);
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#news_content2 img{
+    width: 50%;
+}
 aside{
     display: block;
     float: right;
