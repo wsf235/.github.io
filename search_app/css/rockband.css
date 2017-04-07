@@ -80,16 +80,71 @@ footer{
 
 footer a{
     display: inline-block;
-	height: 30px;
-	width: 30 px;
-	background-image: url("../images/social.png");
-	background-position: 0 0;
 	
 }
 
-footer a:hover{
+#A1{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 0 0;
+}
+#A2{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 30px 0;
+}
+#A3{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 60px 0;
+}
+#A4{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 90px 0;
+}
+#A5{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 120px 0;
+}
+
+#A1:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
 	background-position: 0 30px;
 }
+#A2:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 30px 30px;
+}
+#A3:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 60px 30px;
+}
+#A4:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 90px 30px;
+}
+#A5:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url("../images/social.png");
+	background-position: 120px 30px;
+}
+
 
 #tours{
     text-align: right;
