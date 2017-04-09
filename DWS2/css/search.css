@@ -1,29 +1,65 @@
-header a img {
-  width: 100px;
-  height: auto; }
+header {
+  background-color: red;
+  color: whitesmoke; }
+  header a img {
+    width: 100px;
+    height: auto; }
+
+footer p {
+  text-align: center;
+  background-color: black;
+  color: whitesmoke; }
 
 body {
   background-color: #999999;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  float: right; }
   ul li {
-    float: left;
-    margin-right: 25px; }
+    display: inline-block;
+    margin-right: 25px;
+    color: whitesmoke; }
 
 h1 {
   clear: both; }
 
-.daily_pkmn {
-  border: 5px solid #ff0; }
+.pkmn {
+  border: solid #ff0 5px; }
 
-.pkmn_search_go .game_search_go .item_search_go .move_search_go .place_search_go {
+.item {
+  border: solid #000 4px; }
+
+.move {
+  border: solid #00f 3px; }
+
+.place {
+  border: solid #f00 6px; }
+
+.game {
+  border: solid #7f7 5px; }
+
+.search_go {
   background-color: #f33;
   border-radius: 10px;
   font-family: "PT Sans Caption", sans-serif; }
 
-#pkmn_search_input #game_search_input #item_search_input #move_search_input #place_search_input {
-  color: darkblue; }
+.main-block {
+  padding: 0 100px 0 100px; }
+
+#view_more {
+  background-color: forestgreen;
+  color: whitesmoke;
+  width: 20%;
+  height: 50px;
+  text-align: center; }
 
 /*# sourceMappingURL=search.css.map */

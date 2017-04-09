@@ -10,36 +10,39 @@
 </head>
 <body>
 <header>
-    <a href="index.html"><img src="images/pokeball_home.png" alt="#"> Pokedex Pro Tempore</a>
     <nav>
         <ul>
-            <li><a href="pokemon.html">Pokemon</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="places.html">Locations</a></li>
-            <li><a href="moves.html">Moves</a></li>
-            <li><a href="games.html">Games</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <h1>Pokemon of The Day!</h1>
-    <section id="daily">
-        Click to Reveal!
-        The image replaces here.
+<section class="main-block">
+    <h1>Pokedex Search</h1>
+
+        <label for="search_category">Search Category: </label>
+        <select id="search_category">
+            <option>Pokemon</option>
+            <option>Item</option>
+            <option>Move</option>
+            <option>Location</option>
+            <option>Generation</option>
+        </select><br><br>
+        <label for="search_input">Input a name or identification number of what you need</label>
+        <input id="search_input" name="text_box" type="text">
+        <button class="search_go">Find!</button>
+
+    <section id="search_results">
+
     </section>
+
+    <a id="view_more" href="http://bulbapedia.bulbagarden.net">Or you can visit Bulbapedia</a>
 </section>
 
 <footer>
-    <nav>
-        <ul>
-            <li><a href="pokemon.html">Pokemon</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="places.html">Locations</a></li>
-            <li><a href="moves.html">Moves</a></li>
-            <li><a href="games.html">Games</a></li>
-        </ul>
-    </nav>
+    <p>Built by William Fenner for the Designing for Web Standards 2 class</p>
 </footer>
 
 <script src="js/results.js"></script>
