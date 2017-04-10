@@ -1,19 +1,27 @@
 header {
-  background-color: red;
-  color: whitesmoke; }
-  header a img {
-    width: 100px;
-    height: auto; }
+  background-color: darkred;
+  color: whitesmoke;
+  height: 150px; }
+  header a {
+    color: whitesmoke; }
+    header a :hover {
+      color: honeydew; }
 
-footer p {
-  text-align: center;
-  background-color: black;
-  color: whitesmoke; }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0; }
+  footer p {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke; }
 
 body {
   background-color: #999999;
   font-family: "PT Sans", sans-serif;
   width: 100%;
+  height: 100%;
   margin: 0;
   border: 0;
   padding: 0; }
@@ -32,20 +40,74 @@ ul {
 h1 {
   clear: both; }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  body {
+    background-color: #999999;
+    font-family: "PT Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0; }
+
+  header {
+    background-color: darkred;
+    color: whitesmoke;
+    height: 50px; } }
+#view_more {
+  background-color: forestgreen;
+  color: whitesmoke;
+  width: 20%;
+  height: 50px;
+  margin: auto; }
+
+.pkmn img, .item img {
+  padding: 25px 0 40px 0; }
+
 .pkmn {
-  border: solid #ff0 5px; }
+  border: solid #ff0 5px;
+  margin: auto;
+  width: 40%; }
+  .pkmn h2 {
+    left: 50%; }
+  .pkmn img {
+    left: 50%; }
 
 .item {
-  border: solid #000 4px; }
+  border: solid #000 4px;
+  margin: auto;
+  width: 40%; }
+  .item h2 {
+    left: 50%; }
+  .item img {
+    left: 50%; }
 
 .move {
-  border: solid #00f 3px; }
+  border: solid #00f 3px;
+  margin: auto;
+  width: 40%; }
+  .move h2 {
+    left: 50%; }
+  .move p {
+    left: 50%; }
 
 .place {
-  border: solid #f00 6px; }
+  border: solid #f00 6px;
+  margin: auto;
+  width: 40%; }
+  .place h2 {
+    left: 50%; }
+  .place p {
+    left: 50%; }
 
 .game {
-  border: solid #7f7 5px; }
+  border: solid #7f7 5px;
+  margin: auto;
+  width: 40%; }
+  .game h2 {
+    left: 50%; }
+  .game p {
+    left: 50%; }
 
 .search_go {
   background-color: #f33;
@@ -54,12 +116,5 @@ h1 {
 
 .main-block {
   padding: 0 100px 0 100px; }
-
-#view_more {
-  background-color: forestgreen;
-  color: whitesmoke;
-  width: 20%;
-  height: 50px;
-  text-align: center; }
 
 /*# sourceMappingURL=search.css.map */

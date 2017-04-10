@@ -2,21 +2,26 @@
  * Created by MasterAnseen on 4/1/17.
  */
 
-//document.addEventListener('load',function(){
-    var request;
-    //var s_request;
-    var data;
-    //var s_data;
-    var SEARCH_CATEGORY = document.querySelector("#search_category");
-    var SEARCH_INPUT = document.querySelector("#search_input");
-    var SEARCH_GO = document.querySelector(".search_go");
-    var SEARCH_RESULTS = document.querySelector("#search_results");
-    var links = [SEARCH_CATEGORY.length];
+var request;
+//var s_request;
+var data;
+//var s_data;
+var SEARCH_FORM = document.querySelector("#form_submission");
 
-    for(var i = 0; i < SEARCH_CATEGORY.length; i++)
-    {
-        links.push("https://pokeapi.co/api/v2/"+SEARCH_CATEGORY.options[i].value.toLowerCase()+"/");
-    }
+var SEARCH_CATEGORY = document.querySelector("#search_category");
+var SEARCH_INPUT = document.querySelector("#search_input");
+var SEARCH_GO = document.querySelector(".search_go");
+var SEARCH_RESULTS = document.querySelector("#search_results");
+var links = [SEARCH_CATEGORY.length];
+
+for(var i = 0; i < SEARCH_CATEGORY.length; i++)
+{
+    links.push("https://pokeapi.co/api/v2/"+SEARCH_CATEGORY.options[i].value.toLowerCase()+"/");
+}
+
+SEARCH_FORM.addEventListener('submit', function(e){
+    e.preventDefault();
+});
 
 if(SEARCH_GO)
     SEARCH_GO.addEventListener('click', function (e) {
@@ -60,7 +65,7 @@ if(SEARCH_GO)
         }
 
 
-                var api = "https://pokeapi.co/api/v2/" + type + "/" + id + "/";
+        var api = "https://pokeapi.co/api/v2/" + type + "/" + id + "/";
 
         /*
         for (i = 1; i < links.length; i++){

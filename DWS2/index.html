@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pokédex Pro Tempore</title>
     <link rel="stylesheet" href="css/search.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption" rel="stylesheet">
@@ -21,7 +21,7 @@
 
 <section class="main-block">
     <h1>Pokedex Search</h1>
-
+    <form id="form_submission">
         <label for="search_category">Search Category: </label>
         <select id="search_category">
             <option>Pokemon</option>
@@ -32,8 +32,8 @@
         </select><br><br>
         <label for="search_input">Input a name or identification number of what you need</label>
         <input id="search_input" name="text_box" type="text">
-        <button class="search_go">Find!</button>
-
+        <input type="submit" class="search_go" value="Find!">
+    </form>
     <section id="search_results">
 
     </section>

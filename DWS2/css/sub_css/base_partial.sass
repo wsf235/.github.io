@@ -1,14 +1,19 @@
 header
-  background-color: red
+  background-color: darkred
   color: whitesmoke
+  height: 150px
 
   a
-    img
-      width: 100px
-      height: auto
+    color: whitesmoke
+    \:hover
+      color: honeydew
+
 
 footer
-
+  position: fixed
+  bottom: 0
+  width: 100%
+  margin: 0
 
   p
     text-align: center
@@ -19,6 +24,7 @@ body
   background-color: #999999
   font-family: $font_sans
   width: 100%
+  height: 100%
   margin: 0
   border: 0
   padding: 0
@@ -39,3 +45,17 @@ h1
   clear: both
 
 
+@media screen and (min-width: 320px) and (max-width: 1200px)
+  body
+    background-color: #999999
+    font-family: $font_sans
+    width: 100%
+    height: 100%
+    margin: 0
+    border: 0
+    padding: 0
+
+  header
+    background-color: darkred
+    color: whitesmoke
+    height: 50px
