@@ -1,0 +1,29 @@
+#img_gallery {
+  text-align: center;
+  padding: 0 100px 0 100px;
+  width: 300px; }
+  #img_gallery img {
+    width: 300px;
+    padding: 10px 10px 10px 10px; }
+  #img_gallery div {
+    top: -150px;
+    height: 150px;
+    position: absolute;
+    color: whitesmoke;
+    background-color: #333333;
+    opacity: 0.0;
+    transform: scaleY(0);
+    transition: transform 2s; }
+    #img_gallery div :hover {
+      transform: scaleY(1);
+      opacity: 1.0;
+      z-index: 3; }
+
+ul {
+  list-style: none; }
+
+header img, header h1, header p {
+  text-align: center; }
+
+footer p {
+  text-align: center; }
