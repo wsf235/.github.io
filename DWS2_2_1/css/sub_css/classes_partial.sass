@@ -1,0 +1,42 @@
+.pkmn
+  +result_box(#ff0, 5px)
+  h2
+    left: 50%
+  img
+    left: 50%
+    @extend %search_results
+
+.item
+  +result_box(#000, 4px)
+  h2
+    left: 50%
+  img
+    left: 50%
+    @extend %search_results
+
+.move
+  +result_box(#00f, 3px)
+  h2
+    left: 50%
+  p
+    left: 50%
+
+.place
+  +result_box(#f00, 6px)
+  h2
+    left: 50%
+  p
+    left: 50%
+
+.game
+  +result_box(#7f7, 5px)
+  h2
+    left: 50%
+  p
+    left: 50%
+
+.search_go
+  +pressed_button(#a0f, 10px, $font_cap)
+
+.main-block
+  padding: 0 100px 0 100px
