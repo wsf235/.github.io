@@ -12,5 +12,5 @@ gulp.task('sass', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('../css/*.sass', ['sass'])
+    gulp.watch('../css/sub_css/*.sass', ['sass'])
 });

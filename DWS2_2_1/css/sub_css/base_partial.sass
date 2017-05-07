@@ -1,23 +1,28 @@
 header
-  background-color: #990073
+  background-color: $other_color
   color: whitesmoke
   height: 150px
+  padding: 0 100px 0 100px
 
   a
     color: whitesmoke
-    \:hover
-      color: honeydew
+
+  a:hover
+    color: gold
 
 
 footer
-  bottom: 0
   width: 100%
-  margin: 0
+  height: 40px
+  position: fixed
+  bottom: 0
+  left: 0
+  background-color: black
+
 
   p
     text-align: center
-    background-color: black
-    color: whitesmoke
+    @extend %add_color
 
 body
   background-color: #999999
@@ -38,8 +43,11 @@ ul
   li
     display: inline-block
     margin-right: 25px
-    color: whitesmoke
+    @extend %add_color
 
 h1
   clear: both
+
+h3
+  font-size: $alt-size
 

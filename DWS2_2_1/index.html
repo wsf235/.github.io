@@ -22,15 +22,17 @@
 
     
     
-</header>
-
-<section class="main-block">
-    <h1>Search Spotify</h1>
     <form id="form_submission">
+        <h1>Search Spotify</h1>
         <label for="search_input">Search for Albums by artist's names!</label>
         <input id="search_input" name="text_box" type="text" placeholder="Type in an Artist Name!">
         <input type="submit" class="search_go" value="Find!">
     </form>
+    
+</header>
+
+<section class="main-block">
+    
     <section id="search_results">
 
     </section>
@@ -43,9 +45,14 @@
     <p>Built by William Fenner for the Designing for Web Standards 2 class</p>
 </footer>
 
-<script id="results-template" type="text/x-handlebars-template">
+<script id="search_results_template" type="text/x-handlebars-template">
     {{#each albums.items}}
-    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="result">
+        <div id="artist">
+            <h3>"{{name}}"</h3>
+            <p>"{{artists.0.name}}"</p>
+        </div>
+    </div>
     {{/each}}
 </script>
 <script src="js/results.js"></script>
