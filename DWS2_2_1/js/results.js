@@ -25,10 +25,12 @@ var search = function (query) {
         success: function (response) {
             if(response.albums.total === 0)
             {
-                result_holder.innerHTML = "<p>Nothing Found</p>";
+                result_holder.innerHTML = "<h2>Results on "+query+"</h2>";
+                result_holder.innerHTML += "<p>Nothing Found</p>";
             }
             else
-                result_holder.innerHTML = template(response);
+                result_holder.innerHTML = "<h2>Results on "+query+"</h2>";
+                result_holder.innerHTML += template(response);
         }
     });
 };
