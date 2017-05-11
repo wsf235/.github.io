@@ -1,8 +1,30 @@
-div
-  #artist
+#artist
+  background-color: $other_color
+  margin-top: 40px
+  @extend %add_color
+
+
+#artist:hover
+  box-shadow: 0 0 10px 10px #a0f
+
+#main-block
+  padding: 0 100px 80px 100px
+  a
+    text-align: center
     background-color: $other_color
-    margin-top: 300px
     @extend %add_color
+
+  a:hover
+    color: gold
+
+#search_results
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+
+
 
 %add_color
   color: whitesmoke

@@ -1,7 +1,7 @@
 header {
   background-color: #50a;
   color: whitesmoke;
-  height: 150px;
+  height: 200px;
   padding: 0 100px 0 100px; }
   header a {
     color: whitesmoke; }
@@ -11,12 +11,11 @@ header {
 footer {
   width: 100%;
   height: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  align-self: flex-end; }
   footer p {
-    text-align: center; }
+    align-items: center; }
 
 body {
   background-color: #999999;
@@ -43,11 +42,29 @@ h1 {
 h3 {
   font-size: 10px; }
 
-div #artist {
+#artist {
   background-color: #50a;
-  margin-top: 300px; }
+  margin-top: 40px; }
 
-footer p, ul li, div #artist, .main-block a {
+#artist:hover {
+  box-shadow: 0 0 10px 10px #a0f; }
+
+#main-block {
+  padding: 0 100px 80px 100px; }
+  #main-block a {
+    text-align: center;
+    background-color: #50a; }
+  #main-block a:hover {
+    color: gold; }
+
+#search_results {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+footer p, ul li, #artist, #main-block a {
   color: whitesmoke; }
 
 .search_go {
@@ -55,20 +72,6 @@ footer p, ul li, div #artist, .main-block a {
   border-radius: 10px;
   font-family: "PT Sans Caption", sans-serif; }
 
-.main-block {
-  padding: 0 100px 80px 100px; }
-  .main-block a {
-    text-align: center;
-    background-color: #50a; }
-  .main-block a:hover {
-    color: gold; }
-
-.result {
+.result img {
   width: 300px;
-  height: 300px;
-  display: inline-block;
-  background-size: cover;
-  margin: 40px 40px 60px 40px; }
-
-.result:hover {
-  box-shadow: 0 0 5px 5px #a0f inset; }
+  height: 300px; }
