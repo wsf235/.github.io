@@ -6,13 +6,25 @@
 var templateSource = document.getElementById('search_results_template').innerHTML;
 var template = Handlebars.compile(templateSource);
 */
-
+var mobile_menu = document.getElementById('mobile');
 var result_holder = document.getElementById('search_results');
+var x = 0;
 
 document.getElementById('form_submission').addEventListener('submit', function (e) {
     e.preventDefault();
     Request(document.getElementById('search_input').value);
 }, false);
+
+mobile_menu.addEventListener('click', function(e){
+    if(x === 1) {
+        this.innerHTML="<img src='img/hamburger.png'>";
+        x = 0;
+    }
+    else{
+        this.innerHTML="<ul> <li><a href='index.html'>Home</a></li> <li><a href='about.html'>About</a></li> <li><a href='contact.html'>Contact</a></li> <li><img src='img/close.png'></li> </ul>";
+        x = 1;
+    }
+});
 
 /*
 var search = function (query) {
@@ -46,13 +58,13 @@ function Request(query) {
     url += '?q='+query;
     url += '&type=album';
     url += '&limit=9';
-    document.getElementById('top').innerHTML += "<h2>Showing results for "+query+"</h2>";
+    document.getElementById('result_tag').innerHTML = "<h2>Showing results for "+query+"</h2>";
 
 
     request.open('GET', url, true);
 
     request.onload = function () {
-        if (request.status >= 200 && request.status < 400) {
+            if (request.status >= 200 && request.status < 400) {
             var data = JSON.parse(request.responseText);
             if(data.albums.total === 0){
                 result_holder.innerHTML += "<p>Nothing Found</p>";
