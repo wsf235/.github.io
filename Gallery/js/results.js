@@ -33,11 +33,11 @@ var result_holder = document.getElementById('img_gallery');
                         "srcset='"+data.results[i].urls.thumb+" 320w,"+
                                    data.results[i].urls.small+" 600w' "+
                         "sizes='(max-width: 320px) 100vw, " +
-                               "(max-width: 601px) 33vw, " +
+                               "(max-width: 601px) 33vw' " +
                         "alt='Nothing here'>"+
                         "<div id='photographer'>"+
                         "<h3>"+data.results[i].user.name+"</h3>"+
-                        "<p>"+data.results[i].likes+"</p>"+
+                        "<p>Likes: "+data.results[i].likes+"</p>"+
                         "</div>"+
                         "</div>";
                 }
@@ -88,11 +88,11 @@ document.getElementById('item_flash').addEventListener('click', function (e) {
                         "srcset='"+data.results[i].urls.thumb+" 320w,"+
                         data.results[i].urls.small+" 600w' "+
                         "sizes='(max-width: 320px) 100vw, " +
-                        "(max-width: 601px) 33vw, " +
+                        "(max-width: 601px) 33vw' " +
                         "alt='Nothing here'>"+
                         "<div id='photographer'>"+
                         "<h3>"+data.results[i].user.name+"</h3>"+
-                        "<p>"+data.results[i].likes+"</p>"+
+                        "<p>Likes: "+data.results[i].likes+"</p>"+
                         "</div>"+
                         "</div>";
                 }

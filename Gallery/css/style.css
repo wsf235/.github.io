@@ -23,7 +23,11 @@
   animation: rise 1s ease; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0; }
 
 header {
   text-align: center; }
@@ -45,16 +49,48 @@ footer {
 .hoverup:hover:before {
   height: 30%; }
 
+#img_gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
 #photographer {
   clear: right;
   overflow: auto; }
 
+@media (min-width: 321px) {
+  .result {
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px; }
+    .result img {
+      width: 150px;
+      height: 150px; }
+  .result:hover #photographer {
+    top: -35px;
+    height: 30px;
+    background-color: #000000;
+    color: whitesmoke;
+    transition: 0.5s ease;
+    opacity: 0.7;
+    position: relative; }
+  #photographer {
+    height: 0%;
+    top: 0px;
+    overflow: auto;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative; }
+    #photographer h3 {
+      font-size: 8px;
+      margin: 2px 0 2px 5px; }
+    #photographer p {
+      margin: 2px 0 2px 10px; } }
+
 @media (min-width: 601px) {
-  #img_gallery {
-    display: inline-flex;
-    padding: 0 100px 0 100px;
-    width: 100%;
-    height: 100%; }
   .result {
     align-content: space-around;
     flex-wrap: wrap;
@@ -64,15 +100,22 @@ footer {
       width: 300px;
       height: 300px; }
   .result:hover #photographer {
-    bottom: 100px;
+    top: -104px;
     height: 100px;
     background-color: #000000;
     color: whitesmoke;
     transition: 0.5s ease;
-    opacity: 0.7; }
+    opacity: 0.7;
+    position: relative; }
   #photographer {
     height: 0%;
-    bottom: 0px;
+    top: 0px;
     overflow: auto;
     transition: 0.5s ease;
-    opacity: 0; } }
+    opacity: 0;
+    position: relative; }
+    #photographer h3 {
+      font-size: 20px;
+      margin: 18px 0 18px 10px; }
+    #photographer p {
+      margin: 18px 0 18px 20px; } }
