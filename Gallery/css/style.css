@@ -9,3 +9,70 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+#item_flash {
+  animation: flash 6s 3s ease infinite; }
+
+@keyframes rise {
+  0% {
+    height: 0%; }
+  100% {
+    height: 40%; } }
+
+#photographer:hover {
+  animation: rise 1s ease; }
+
+body {
+  width: 100%; }
+
+header {
+  text-align: center; }
+
+footer {
+  text-align: center; }
+
+#globe-2 {
+  animation: 5s ease infinite; }
+
+.hoverup:before {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: #000000;
+  transition: all 1s ease; }
+
+.hoverup:hover:before {
+  height: 30%; }
+
+#photographer {
+  clear: right;
+  overflow: auto; }
+
+@media (min-width: 601px) {
+  #img_gallery {
+    display: inline-flex;
+    padding: 0 100px 0 100px;
+    width: 100%;
+    height: 100%; }
+  .result {
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px; }
+    .result img {
+      width: 300px;
+      height: 300px; }
+  .result:hover #photographer {
+    bottom: 100px;
+    height: 100px;
+    background-color: #000000;
+    color: whitesmoke;
+    transition: 0.5s ease;
+    opacity: 0.7; }
+  #photographer {
+    height: 0%;
+    bottom: 0px;
+    overflow: auto;
+    transition: 0.5s ease;
+    opacity: 0; } }

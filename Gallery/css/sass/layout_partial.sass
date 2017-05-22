@@ -1,0 +1,38 @@
+
+
+#photographer
+  clear: right
+  overflow: auto
+
+
+@media (min-width: 601px)
+  #img_gallery
+    display: inline-flex
+    padding: 0 100px 0 100px
+    width: 100%
+    height: 100%
+
+  .result
+    align-content: space-around
+    flex-wrap: wrap
+    width: 300px
+    height: 300px
+    img
+      width: 300px
+      height: 300px
+
+  .result:hover
+    #photographer
+      bottom: 100px
+      height: 100px
+      background-color: #000000
+      color: whitesmoke
+      transition: 0.5s ease
+      opacity: 0.7
+
+  #photographer
+    height: 0%
+    bottom: 0px
+    overflow: auto
+    transition: 0.5s ease
+    opacity: 0
