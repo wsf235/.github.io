@@ -63,6 +63,7 @@ var result_holder = document.getElementById('img_gallery');
 
 
 document.getElementById('item_flash').addEventListener('click', function (e) {
+    //document.getElementById('Desktop-HD').classList.add('globe_flash');
     var request = new XMLHttpRequest();
     result_holder.innerHTML = '';
     var url = 'https://api.unsplash.com/search/photos';

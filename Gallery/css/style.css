@@ -13,6 +13,19 @@
 #item_flash {
   animation: flash 6s 3s ease infinite; }
 
+@keyframes color_flash {
+  0% {
+    fill: #0a3b5c; }
+  25% {
+    fill: #d1eafa; }
+  50% {
+    fill: #1a94e6; }
+  100% {
+    fill: #0a3b5c; } }
+
+.globe_flash {
+  animation: color_flash 10s ease; }
+
 @keyframes rise {
   0% {
     height: 0%; }
