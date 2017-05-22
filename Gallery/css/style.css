@@ -78,7 +78,8 @@ footer {
     align-content: space-around;
     flex-wrap: wrap;
     width: 150px;
-    height: 150px; }
+    height: 150px;
+    padding: 10px; }
     .result img {
       width: 150px;
       height: 150px; }
@@ -108,7 +109,8 @@ footer {
     align-content: space-around;
     flex-wrap: wrap;
     width: 300px;
-    height: 300px; }
+    height: 300px;
+    padding: 20px; }
     .result img {
       width: 300px;
       height: 300px; }
