@@ -1,0 +1,53 @@
+header {
+  background-color: #444444;
+  color: white; }
+
+#validate_form {
+  background-color: #eeeeee; }
+  #validate_form input {
+    background-color: #cccccc;
+    border-radius: 5px; }
+  #validate_form select {
+    background-color: #cccccc;
+    border-radius: 5px; }
+  #validate_form .register {
+    background-color: #4183c4;
+    color: #eeeeee; }
+
+#contact div {
+  background-color: #4183c4;
+  color: #eeeeee; }
+
+em {
+  font-size: 0.7em; }
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+#form {
+  float: left;
+  width: 60%;
+  padding-left: 3%; }
+
+#validate_form {
+  padding: 3% 2% 0 2%; }
+  #validate_form input {
+    width: 60%;
+    height: 3em; }
+  #validate_form em {
+    width: 38%;
+    float: right;
+    clear: none; }
+  #validate_form select {
+    width: 60%;
+    height: 3em; }
+  #validate_form .register {
+    width: 60%;
+    height: 3em; }
+
+#contact {
+  float: right;
+  width: 30%;
+  padding-right: 3%; }
