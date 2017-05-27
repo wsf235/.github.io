@@ -17,14 +17,14 @@
     <h2>Registration</h2>
 <form id="validate_form">
     
-    <label for="name">Name required</label><br>
+    <label for="name">Name <em>required</em></label><br>
     <input id="name" type="text" placeholder="" required><br>
     
-    <label for="email">Email required</label><br>
+    <label for="email">Email <em>required</em></label><br>
     <input id="email" type="email" placeholder="" required>
     <em>Must be a valid email address</em><br>
 
-    <label for="pass">Password required</label><br>
+    <label for="pass">Password <em>required</em></label><br>
     <input id="pass" type="password" placeholder="" required pattern="[a-zA-Z0-9]+" minlength="8" maxlength="50">
     <em>Must contain one uppercase letter, one lowercase letter, 10 or more characters, and at least one number.</em><br>
     <ul id="error_list">

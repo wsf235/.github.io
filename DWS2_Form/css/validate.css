@@ -34,7 +34,13 @@ body {
   font-family: 'Oswald', sans-serif; }
 
 em {
-  font-size: 0.7em; }
+  font-size: 0.7em;
+  font-style: normal; }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.5em; }
 
 h1 {
   margin: 0;
@@ -47,10 +53,6 @@ h3 {
 #contact div {
   padding: 1% 0 5% 2%; }
 
-select {
-  background: transparent;
-  background-image: src= "img/down-chevron.svg"; }
-
 #form_confirm p {
   font-size: 18px; }
 
@@ -58,6 +60,9 @@ body {
   margin: 0;
   padding: 0;
   border: 0; }
+
+header {
+  width: 100%; }
 
 #error_list {
   margin: 0; }
@@ -92,7 +97,7 @@ body {
     border-width: 3px; }
   #validate_form #pass:valid {
     border-width: 3px; }
-  #validate_form em {
+  #validate_form > em {
     width: 38%;
     float: right;
     clear: none; }
@@ -116,7 +121,7 @@ body {
   padding-right: 3%;
   padding-left: 3%; }
 
-@media (min-width: 321px) {
+@media (min-width: 601px) {
   #form {
     float: left;
     width: 60%;
