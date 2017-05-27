@@ -4,10 +4,29 @@ body
   border: 0
 
 
+#error_list
+  margin: 0
+
 #form
   float: left
   width: 60%
   padding-left: 3%
+
+
+#form_confirm
+  display: none
+  padding: 30% 2% 30% 2%
+  text-align: center
+
+
+  img
+    top: 40%
+    height: 50px
+    width: 50px
+
+  p
+    top: 50%
+
 
 #validate_form
   padding: 3% 2% 0 2%
@@ -15,6 +34,18 @@ body
   input
     width: 60%
     height: 3em
+    border-radius: 5px
+    border-width: 0px
+    margin-bottom: 1.25em
+
+  #name:valid
+    border-width: 3px
+
+  #email:valid
+    border-width: 3px
+
+  #pass:valid
+    border-width: 3px
 
   em
     width: 38%
@@ -24,12 +55,32 @@ body
   select
     width: 60%
     height: 3em
+    border-radius: 5px
+    border-width: 0px
+    margin-bottom: 1.25em
 
   .register
     width: 60%
     height: 3em
 
+#form
+  float: none
+  width: 100%
+
 #contact
-  float: right
-  width: 30%
+  clear: both
+  width: 100%
   padding-right: 3%
+  padding-left: 3%
+
+@media (min-width: 321px)
+  #form
+    float: left
+    width: 60%
+    padding-left: 3%
+
+  #contact
+    clear: none
+    float: right
+    width: 30%
+    padding-left: 0%

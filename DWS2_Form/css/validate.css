@@ -2,14 +2,26 @@ header {
   background-color: #444444;
   color: white; }
 
+.error {
+  color: darkred; }
+
+#form_confirm {
+  background-color: #eeeeee; }
+
 #validate_form {
   background-color: #eeeeee; }
   #validate_form input {
-    background-color: #cccccc;
-    border-radius: 5px; }
+    background-color: #cccccc; }
+  #validate_form #name:valid {
+    border-color: #bbffbb; }
+  #validate_form #email:valid {
+    border-color: #bbffbb; }
+  #validate_form #pass:valid {
+    border-color: #bbffbb; }
   #validate_form select {
-    background-color: #cccccc;
-    border-radius: 5px; }
+    background-color: #cccccc; }
+    #validate_form select option {
+      background-color: #009926; }
   #validate_form .register {
     background-color: #4183c4;
     color: #eeeeee; }
@@ -18,36 +30,99 @@ header {
   background-color: #4183c4;
   color: #eeeeee; }
 
+body {
+  font-family: 'Oswald', sans-serif; }
+
 em {
   font-size: 0.7em; }
+
+h1 {
+  margin: 0;
+  padding: 0.67em 0 0.67em 3%; }
+
+h3 {
+  font-size: 1.5em;
+  margin: 0.83em 0 0.83em 0; }
+
+#contact div {
+  padding: 1% 0 5% 2%; }
+
+select {
+  background: transparent;
+  background-image: src= "img/down-chevron.svg"; }
+
+#form_confirm p {
+  font-size: 18px; }
 
 body {
   margin: 0;
   padding: 0;
   border: 0; }
 
+#error_list {
+  margin: 0; }
+
 #form {
   float: left;
   width: 60%;
   padding-left: 3%; }
 
+#form_confirm {
+  display: none;
+  padding: 30% 2% 30% 2%;
+  text-align: center; }
+  #form_confirm img {
+    top: 40%;
+    height: 50px;
+    width: 50px; }
+  #form_confirm p {
+    top: 50%; }
+
 #validate_form {
   padding: 3% 2% 0 2%; }
   #validate_form input {
     width: 60%;
-    height: 3em; }
+    height: 3em;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-bottom: 1.25em; }
+  #validate_form #name:valid {
+    border-width: 3px; }
+  #validate_form #email:valid {
+    border-width: 3px; }
+  #validate_form #pass:valid {
+    border-width: 3px; }
   #validate_form em {
     width: 38%;
     float: right;
     clear: none; }
   #validate_form select {
     width: 60%;
-    height: 3em; }
+    height: 3em;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-bottom: 1.25em; }
   #validate_form .register {
     width: 60%;
     height: 3em; }
 
+#form {
+  float: none;
+  width: 100%; }
+
 #contact {
-  float: right;
-  width: 30%;
-  padding-right: 3%; }
+  clear: both;
+  width: 100%;
+  padding-right: 3%;
+  padding-left: 3%; }
+
+@media (min-width: 321px) {
+  #form {
+    float: left;
+    width: 60%;
+    padding-left: 3%; }
+  #contact {
+    clear: none;
+    float: right;
+    width: 30%;
+    padding-left: 0%; } }

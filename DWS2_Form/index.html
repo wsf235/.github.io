@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/validate.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     
 </head>
 <body>
-<header>
+<header role="banner">
     <h1>Compendium Registration Form</h1>
 </header>
 
-<section id="form">
+<section id="form" role="main">
     <h2>Registration</h2>
 <form id="validate_form">
     
     <label for="name">Name required</label><br>
-    <input id="name" type="text" placeholder=""><br>
+    <input id="name" type="text" placeholder="" required><br>
     
     <label for="email">Email required</label><br>
-    <input id="email" type="email" placeholder="">
+    <input id="email" type="email" placeholder="" required>
     <em>Must be a valid email address</em><br>
 
     <label for="pass">Password required</label><br>
-    <input id="pass" type="password" placeholder="">
+    <input id="pass" type="password" placeholder="" required pattern="[a-zA-Z0-9]+" minlength="8" maxlength="50">
     <em>Must contain one uppercase letter, one lowercase letter, 10 or more characters, and at least one number.</em><br>
-
+    <ul id="error_list">
+        
+    </ul>
+    
     <label for="phone">Phone</label><br>
     <input id="phone" type="text" placeholder=""><br>
 
@@ -285,6 +289,12 @@
     
     <input type="submit" class="register" value="Register">
 </form>
+    
+<section id="form_confirm">
+    <img src="img/circle-check.svg">
+    <p>Congratulations, you have been registered!</p>
+</section>    
+    
 </section>
 
 <section id="contact">
@@ -295,6 +305,8 @@
         <p><img src="img/email.svg" alt="contact@formdemo.com"> contact@formdemo.com</p>
     </div>
 </section>
+
+<script src="js/validate.js"></script>
 
 </body>
 </html>
