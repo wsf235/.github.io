@@ -7,7 +7,7 @@ var form_confirm= document.getElementById('form_confirm');
 const name = document.getElementById('name');
 
 //Get Email and check to see if it's valid
-const email = document.getElementById("email");
+const _email = document.getElementById("email");
 
 //Get the Password and check for matching conditions
 const pass = document.getElementById('pass');
