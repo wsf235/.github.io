@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "title": "Question 1",
+      "question": "Which of these pokémon came from space?",
+      "correct": "Deoxys",
+      "wrong": [
+        "Lugia",
+        "Celebi",
+        "Chikorita"
+      ],
+      "hint": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pokémon)"
+    },
+    {
+      "title": "Question 2",
+      "question": "In pokémon emerald, _______ from is Deoxys’s default form.",
+      "correct": "Speed",
+      "wrong": [
+        "Attack",
+        "Defense",
+        "Normal"
+      ],
+      "hint": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pokémon)"
+    },
+{
+"title": "Question 3",
+"question": "________ style Oricorio is ghost type",
+"correct": "Sensu",
+"wrong": [
+"Pom-Pom",
+"Baile",
+"Pa’u"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_with_form_differences#Oricorio"
+},
+{
+"title": "Question 4",
+"question": "Which of these multi-hit moves is a water type move?",
+"correct": "Water Shuriken",
+"wrong": [
+"Bullet Seed",
+"Icicle Spear",
+"Tail Slap"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/Multi-strike_move"
+},
+{
+"title": "Question 5",
+"question": "How many 'generations' of pokémon games are there?",
+"correct": "7",
+"wrong": [
+"6",
+"8",
+"12"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/Core_series"
+},
+{
+"title": "Question 6",
+"question": "The ___________ are pokemon from another dimension, charged by the energy emitted by the wormhole they travelled through.",
+"correct": "Ultra Beasts",
+"wrong": [
+"Weather Trio",
+"Swords of Justice",
+"Legendary Birds"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/Ultra_Beast"
+},
+{
+"title": "Question 7",
+"question": "Who was the first 'baby' pokémon introduced?",
+"correct": "Togepi",
+"wrong": [
+"Pichu",
+"Riolu",
+"Wynaut"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/Baby_Pokémon"
+},
+{
+"title": "Question 8",
+"question": "Who was Ash Ketchum's first travelling partner (human)?",
+"correct": "Misty",
+"wrong": [
+"May",
+"Brock",
+"Lillie"
+],
+"hint": "https://bulbapedia.bulbagarden.net/wiki/Ash_Ketchum"
+}
+]
+}
