@@ -20,3 +20,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 !/build/
+!/build/index.html
+!/build/favicon.ico
+!/build/static/
