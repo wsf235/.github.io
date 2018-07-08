@@ -2,7 +2,7 @@
   "name": "final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wsf235.github.io/PaP5_Final/final/public",
+  "homepage": "http://wsf235.github.io/PaP5_Final/final/build",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
