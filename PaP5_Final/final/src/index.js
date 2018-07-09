@@ -5,6 +5,6 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-console.log("Area = "+process.env.PUBLIC_URL);
+console.log("Area = "+process.env.PUBLIC_URL.length);
 ReactDOM.render(<Router basename={process.env.PUBLIC_URL}><App /></Router>, document.getElementById('root'));
 registerServiceWorker();
