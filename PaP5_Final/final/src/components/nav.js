@@ -12,9 +12,9 @@ class Nav extends Component{
     render(){
         return(
             <nav className="">
-                <NavLink to={process.env.PUBLIC_URL.length+"/featured"}><FaHome /> Home - Top Recipes</NavLink>
-                <NavLink to={process.env.PUBLIC_URL.length+"/search"}><FaSearch /> Search</NavLink>
-                <NavLink to={process.env.PUBLIC_URL.length+"/storage"}><FaHeart /> Your Recipes</NavLink>
+                <NavLink to={"/featured"}><FaHome /> Home - Top Recipes</NavLink>
+                <NavLink to={"/search"}><FaSearch /> Search</NavLink>
+                <NavLink to={"/storage"}><FaHeart /> Your Recipes</NavLink>
             </nav>
         );
     }
