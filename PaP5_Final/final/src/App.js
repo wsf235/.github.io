@@ -11,14 +11,6 @@ import {
 
 
 class App extends Component {
-    constructor(){
-        this.state={
-            base_url: process.env.PUBLIC_URL
-        }
-    }
-
-
-
     render() {
         return (
             <Router>
