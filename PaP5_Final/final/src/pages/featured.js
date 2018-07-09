@@ -8,10 +8,10 @@ import Request from '../functions/search_recipe'
 var arr = ["beef", "chicken", "pork", "vegan", "vegetable", "smoothie", "wrap", "potato", "cake", "egg"];
 
 var path = Math.floor(Math.random()*10);
-if(window.location.pathname.length> 10)
+if(window.location.pathname.length> (process.env.PUBLIC_URL.length+10))
 {
-    var data = Request(window.location.pathname.substring(10));
-    console.log(window.location.pathname.substring(10));
+    var data = Request(window.location.pathname.substring(process.env.PUBLIC_URL.length+10));
+    console.log(window.location.pathname.substring(process.env.PUBLIC_URL.length+10));
 }
 else{
     var data = Request(arr[path]);

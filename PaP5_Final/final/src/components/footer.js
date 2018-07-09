@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 
 import { NavLink } from 'react-router-dom'
+import Nav from './nav'
 
 import FaHome from 'react-icons/lib/ti/home-outline'
 import FaSearch from 'react-icons/lib/fa/search'
@@ -13,9 +14,7 @@ class Footer extends Component{
     render(){
         return(
             <footer className="content footer">
-                <NavLink to="/featured"><FaHome /></NavLink>
-                <NavLink to="/search"><FaSearch /></NavLink>
-                <NavLink to="/storage"><FaHeart /></NavLink>
+                <Nav />
             </footer>
         )
     }
