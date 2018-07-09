@@ -9,7 +9,7 @@ class Major extends Component{
         return(
             <nav className="major">
                 <ul>
-                    <li><NavLink to={process.env.PUBLIC_URL.length+"/featured/beef"}> Beef</NavLink></li>
+                    <li><NavLink to={"/featured/beef"}> Beef</NavLink></li>
                     <li><NavLink to={process.env.PUBLIC_URL.length+"/featured/eggs"}> Eggs</NavLink></li>
                     <li><NavLink to={process.env.PUBLIC_URL.length+"/featured/chicken"}> Chicken</NavLink></li>
                     <li><NavLink to={process.env.PUBLIC_URL.length+"/featured/pork"}> Pork</NavLink></li>
