@@ -1,0 +1,49 @@
+
+#cover{
+    width: 27%;
+    float: right;
+    clear: none;
+    box-shadow: 0 0 15px whitesmoke;
+}
+
+#logo{
+    clear: both;
+}
+
+a:link{
+    color: whitesmoke;
+}
+
+a:visited{
+    color: yellow;
+}
+
+nav{
+    list-style: none;
+    clear: none;
+}
+
+body{
+    padding: 25px;
+    background-color: #0a3b5c;
+    color: whitesmoke;
+}
+
+#education, #projects{
+    box-shadow: 0 0 15px whitesmoke;
+    opacity: 0.85;
+    text-align: right;
+    clear: both;
+    background-color: #3a33d1;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#skills, #top{
+    box-shadow: 0 0 15px whitesmoke;
+    opacity: 0.85;
+    clear: both;
+    background-color: #3a33d1;
+    padding: 10px;
+    margin-bottom: 15px;
+}
