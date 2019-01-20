@@ -32,7 +32,7 @@ class validate_form{
     get_msgs()
     {
         const status = this.input.validity;
-
+        
         if (status.typeMismatch)
         {
             this.add_error_msg("The entry isn't a password type.");
